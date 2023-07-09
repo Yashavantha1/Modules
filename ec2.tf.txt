@@ -1,0 +1,10 @@
+resource "aws_instance" "instance1" {
+    ami = "ami-053b0d53c279acc90"
+    instance_type = "t2.micro"
+    key_name = "terraKey1"
+
+
+        tags = {
+            Name = "ec2-instance1_by_module"
+        }
+}
